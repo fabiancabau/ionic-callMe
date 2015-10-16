@@ -1,0 +1,10 @@
+ <ion-view view-title="Patient Dashboard - {{ patientCtrl.name }}" ng-controller="PatientController as patientCtrl" class="light-grey">
+   <ion-content has-bouncing="true" class="content">
+    <div ng-show="patientCtrl.connected">
+       <div class="log pad2">Connected</div>
+    </div>
+    <button class="button button-full button-positive" ng-click="patientCtrl.callNurses()">
+      Call a Nurse
+    </button>
+  </ion-content>
+</ion-view>

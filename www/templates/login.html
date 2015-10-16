@@ -1,0 +1,16 @@
+<ion-view ng-controller="LoginController as logcntrl" view-title="Choose your role">
+  <ion-content class="padding">
+
+    <label class="item item-input linegrey" >
+      <input type="text" class="linegrey white" placeholder="What is your name?" ng-model="logcntrl.name">
+    </label>
+
+    <button class="button button-full button-positive" ng-click="logcntrl.join('nurse')">
+      Nurse
+    </button>
+
+    <button class="button button-full button-energized" ng-click="logcntrl.join('patient')">
+      Patient
+    </button>
+  </ion-content>
+</ion-view>

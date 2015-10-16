@@ -1,0 +1,21 @@
+ <ion-view view-title="Nurse Dashboard - Online Patients" ng-controller="NurseController as nurseCtrl" class="light-grey">
+   <ion-content has-bouncing="true" class="content">
+    <div>
+      <ul class="list">
+          <li ng-repeat="patient in nurseCtrl.patients" class="item">
+              <span>{{patient.info.name}}</span >
+          </li>
+      </ul>
+    </div>
+  </ion-content>
+  <!-- <div class="list light-grey bottommsg">
+      <div class="item item-input-inset light-grey">
+        <label  class="item-input-wrapper line-light-grey nopadtop">
+          <input class="line-light-grey" ng-change="chatCtrl.updateTyping()" type="text"  placeholder="Message" ng-enter="chatCtrl.sendMessage()" ng-model="chatCtrl.message"> 
+        </label>
+        <div class="divsend">
+              <button class="button button-clear ion-android-send iconsend" ng-click="chatCtrl.sendMessage()"></button>
+        </div>
+      </div>
+  </div>      -->
+</ion-view>
