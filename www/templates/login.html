@@ -1,5 +1,9 @@
-<ion-view ng-controller="LoginController as logcntrl" view-title="Choose your role">
+<ion-view ng-controller="LoginController as logcntrl" view-title="Call Me!">
   <ion-content class="padding">
+
+    <div style="margin: 0 auto; text-align:center;">
+      <i class="icon ion-ios-medical balanced" style="font-size:90px"></i>
+    </div>
 
     <label class="item item-input linegrey" >
       <input type="text" class="linegrey white" placeholder="What is your name?" ng-model="logcntrl.name">
@@ -9,8 +13,9 @@
       Nurse
     </button>
 
-    <button class="button button-full button-energized" ng-click="logcntrl.join('patient')">
+    <button class="button button-full button-calm" ng-click="logcntrl.join('patient')">
       Patient
     </button>
+
   </ion-content>
 </ion-view>

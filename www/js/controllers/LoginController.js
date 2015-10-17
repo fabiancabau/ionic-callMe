@@ -1,4 +1,4 @@
- app.controller('LoginController',function($state,$sanitize) {
+ app.controller('LoginController',function($state, $sanitize) {
 
     var self = this;
     self.join=function(type)
